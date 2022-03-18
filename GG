@@ -1,5 +1,4 @@
 do--//Crash things
-    workspace.__THINGS.__REMOTES["redeem free gift"]:InvokeServer(tabla) -- open gift selected in the list
    Library = require(game:GetService('ReplicatedStorage').Framework.Library)
    function Death()
        spawn(function()
@@ -17,13 +16,4 @@ do--//Crash things
        end)
     end
 end
-local packetstosend = getgenv().packets / 4 -- A crash function is 4 packets, its why i do / 4
-for i=1,packetstosend do -- Repeat the crash function packetstosend times
-    spawn(Crashear)
-end
-
-local tabla = { -- select gift 13 (Dont exist)
-	[1] = 13
-}
-
 workspace.__THINGS.__REMOTES["redeem free gift"]:InvokeServer(tabla) -- open gift selected in the list
